@@ -1,4 +1,6 @@
-
+img {
+  max-width: 100%;
+}
 .adjust-bar {
   -webkit-appearance: none;
   appearance: none;
