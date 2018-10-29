@@ -5,6 +5,8 @@ const uglify = require('gulp-uglify-es').default
 const gutil = require('gulp-util')
 const connect = require('gulp-connect-multi')
 
+const svgSprite = require('gulp-svg-sprite')
+
 const devServer = connect()
 
 gulp.task('html', () => {
@@ -47,6 +49,35 @@ gulp.task('connect', devServer.server({
   livereload: true,
   open: { browser: 'Google Chrome' }
 }))
+
+
+
+var config = {
+  shape: {
+      dimension: {
+          maxWidth: 50,
+          maxHeight: 50
+      },
+      spacing: {
+          padding: 0
+      }
+  },
+  mode: {
+    css: {
+      render: {
+        css: true
+      }
+    }
+  }
+}
+
+
+
+gulp.task('svg', function (cb) {
+  return gulp.src('assets/*.svg')
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest('sprites'))
+})
 
 
 gulp.task('default', ['connect'])
