@@ -5,7 +5,6 @@ const gutil = require('gulp-util')
 
 gulp.task('html', () => {
   return gulp.src('src/index.html')
-    .pipe(devServer.reload())
     .pipe(gulp.dest('public'))
 })
 
