@@ -1,5 +1,21 @@
-@import url("./fonts/pt_sans.css");
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: bold;
+	src: url('pts75f_w.eot');
+	src: local('PT Sans Bold'), url('fonts/PTS75F_W-min.woff') format('woff');
+}
 
+@font-face {
+	font-family: 'PT Sans Narrow';
+	font-weight: bold;
+	src: url('ptn77f_w.eot');
+	src: local('PT Sans Narrow Bold'), url('fonts/PTN77F_W-min.woff') format('woff');
+}
+
+.main__greeting {
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 img {
   max-width: 100%;
 }
@@ -338,7 +354,7 @@ img {
   padding: 0 20px 0 25px;
   display: flex;
   justify-content: space-between;
-  background: url("assets/sh.webp") center center/cover no-repeat;
+  background: url("assets/sh1.webp") center center/cover no-repeat;
 }
 .main__greeting {
   margin-top: 6px;
