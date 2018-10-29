@@ -9,7 +9,7 @@ gulp.task('html', () => {
 })
 
 gulp.task('script', () => {
-  return gulp.src('src/js/**/*.js')
+  return gulp.src('src/scripts.js')
     .pipe(uglify())
     .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()) })
     .pipe(gulp.dest('public'))
