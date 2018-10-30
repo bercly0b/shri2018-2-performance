@@ -3,16 +3,18 @@
 	font-style: normal;
 	font-weight: bold;
 	font-display: swap;
-	src: url('pts75f_w.eot');
-	src: local('PT Sans Bold'), url('fonts/PTS75F_W-min.woff') format('woff');
+	src: local('PT Sans Bold'),
+	url('fonts/PTS75F_W-min.woff2') format('woff2'),
+	url('fonts/PTS75F_W-min.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'PT Sans Narrow';
 	font-weight: bold;
 	font-display: swap;
-	src: url('ptn77f_w.eot');
-	src: local('PT Sans Narrow Bold'), url('fonts/PTN77F_W-min.woff') format('woff');
+	src: local('PT Sans Narrow Bold'),
+	url('fonts/PTN77F_W-min.woff2') format('woff2'),
+	url('fonts/PTN77F_W-min.woff') format('woff');
 }
 
 .main__greeting {
